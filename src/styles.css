@@ -1,0 +1,13 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+.breed-select {
+    width: 400px;
+}
+.cat-info {
+    display: flex;
+}
+.thumb-pic {
+    margin-top: 8px;
+    margin-right: 24px;
+}
