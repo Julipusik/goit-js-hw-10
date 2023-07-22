@@ -1,8 +1,7 @@
 import { fetchBreeds, fetchCatByBreed } from './cat-api';
 import { Report } from 'notiflix/build/notiflix-report-aio';
 import { Loading } from 'notiflix/build/notiflix-loading-aio';
-import SlimSelect from 'slim-select'
-import "slim-select/dist/slimselect.css";
+
 
 const selectEl = document.querySelector('.breed-select');
 const catInfo = document.querySelector('.cat-info');
@@ -18,7 +17,7 @@ fetchBreeds()
     
 
 selectEl.addEventListener('change', evt => {
-    // evt.preventDefault();
+    evt.preventDefault();
     Loading.circle('Loading data, please wait...');
     selectEl.classList.add("is-hidden");
     catInfo.classList.add("is-hidden");
