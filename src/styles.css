@@ -3,6 +3,8 @@ body {
 }
 .breed-select {
     width: 400px;
+    font-size: 16px;
+    padding: 4px 8px;
 }
 .cat-info {
     display: flex;
@@ -10,4 +12,7 @@ body {
 .thumb-pic {
     margin-top: 8px;
     margin-right: 24px;
+}
+.is-hidden {
+    visibility: hidden;
 }

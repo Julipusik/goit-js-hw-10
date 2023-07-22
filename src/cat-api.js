@@ -8,9 +8,6 @@ function fetchBreeds () {
   return axios
     .get(`breeds/`)
     .then(response => {
-      if (response.status !== 200) {
-        throw new Error(response.status);
-      }
       return response.data;
     })
     .catch(() => {
@@ -22,9 +19,6 @@ function fetchCatByBreed(breedId) {
     return axios
         .get(`/images/search?breed_ids=${breedId}`)
         .then(response => {
-        if (response.status !== 200) {
-            throw new Error(response.status);
-        }
             return response.data[0];
     })
         .catch(() => {
